@@ -51,3 +51,7 @@ Luego de correr npm run dev se ingresa al navegador como http://localhost:5173
 ```sh
 npm run build
 ```
+
+## Desarrollado
+
+Este proyecto fue desarrollado por Genaro Muñoz Obregón - 6 May 2025
