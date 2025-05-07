@@ -1,0 +1,16 @@
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+    </IfModule>
+    
+    Options +FollowSymLinks
+    RewriteEngine On
+
+    # Redirige todas las rutas a index.html
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^ /index.html [L]
+
+    # Manejo de errores
+    ErrorDocument 404 /index.html
+</IfModule>
